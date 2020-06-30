@@ -1,5 +1,5 @@
-def somar(a: int, b: int) -> int:
-    return a + b
+# def somar(a: int, b: int) -> int:
+#     return a + b
 
 
 # if __name__ == '__main__':
@@ -7,14 +7,14 @@ def somar(a: int, b: int) -> int:
 #     print(resultado)
 
 
-funcao = lambda : print('osenias')
-somar = lambda a, b: a + b
-subtrair = lambda a, b: a - b
+# funcao = lambda : print('osenias')
+# somar = lambda a, b: a + b
+# subtrair = lambda a, b: a - b
 
-print(type(funcao))
+# print(type(funcao))
 
-print(somar(10, 20))
-print(subtrair(10, 20))
+# print(somar(10, 20))
+# print(subtrair(10, 20))
 
 
 def somar(a, b):
@@ -36,6 +36,21 @@ b = funcao3(fn=subtrair, incremento=100, a=10, b=10, c=50)
 print(a)
 print(b)
 
+
+
+def somar_varios_numeros(*args):
+    acumulador = 0
+
+    for i in args:
+        acumulador += i
+
+    return acumulador
+
+
+print(somar_varios_numeros(1, 2))
+print(somar_varios_numeros(1, 2, 3))
+print(somar_varios_numeros(1, 2, 3, 4))
+print(somar_varios_numeros(1, 2, 3, 4, 5))
 
 
 
