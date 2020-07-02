@@ -1,4 +1,4 @@
-from app.settings import employees
+from exercicio.settings import employees
 
 def add():
     employee = {}

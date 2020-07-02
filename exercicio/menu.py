@@ -1,4 +1,4 @@
-from app import actions
+from exercicio import actions
 
 def menu():
 
@@ -18,9 +18,9 @@ def menu():
         elif option == 2:
             actions.listar()
         elif option == 3:
-            actions.somar_salario_homens()
+            print('Soma do salário dos homens: {}'.format(actions.somar_salario_homens()))
         elif option == 4:
-            actions.somar_salario_mulheres()
+            print('Soma do salário das mulheres: {}'.format(actions.somar_salario_mulheres()))
         else:
             print('Opção inválida')
 
